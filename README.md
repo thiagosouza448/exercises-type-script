@@ -1,1 +1,1 @@
-tsc -w na raiz do projeto, ele roda todo processo pra encontrar itens que mudaram
+tsc -w 
