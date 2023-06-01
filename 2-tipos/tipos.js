@@ -96,7 +96,7 @@ let funcionario2 = {
             return `${name} ponto normal com ${horario} horas`;
         }
         else {
-            const message = `${name} fora do horario, ${horario}, avisa a supervisora ${this.supervisores[0]} e ${this.supervisores[1]}`;
+            const message = `${name} fora do horario, ${horario}, avisar a supervisora ${this.supervisores[0]} e ${this.supervisores[1]}`;
             return message;
         }
     }
@@ -109,3 +109,61 @@ let nota = 10;
 console.log(`minha nota é ${nota}!`);
 nota = "um coco";
 console.log(`minha nota é ${nota}!`);
+// checando tipos em Runtime
+let valor = 30;
+if (typeof valor == "number") {
+    console.log("é um number");
+}
+else {
+    console.log(typeof valor);
+}
+/*never*/
+function falha(msg) {
+    while (true) {
+        throw new Error(msg);
+    }
+}
+const produto = {
+    nome: 'sabao',
+    preco: 3,
+    validarProduto() {
+        if (!this.nome || this.nome.trim().length == 0) {
+            falha("precisa ter um nome");
+        }
+        if (this.preco <= 0) {
+            falha('preco invalido');
+        }
+        else {
+            console.log(`produto: ${this.nome} preco: ${this.preco}`);
+        }
+    }
+};
+produto.validarProduto();
+// null
+let alturaOpcional = 12;
+alturaOpcional = null;
+const contato01 = {
+    nome: 'fulano',
+    tel1: '119781728718',
+    tel2: null
+};
+console.log(contato01);
+console.log(contato01.tel1);
+console.log(contato01.tel2);
+let podeSerNulo = null;
+podeSerNulo = 12;
+console.log(podeSerNulo);
+let contaBancaria = {
+    saldo: 1000,
+    depositar(valor) {
+        this.saldo += valor;
+    }
+};
+let correntista = {
+    nome: 'Thiago Souza',
+    contaBancaria: contaBancaria,
+    contatos: ['11819219201', '1189129812']
+};
+correntista.contaBancaria.depositar(1400);
+console.log(correntista);
+//# sourceMappingURL=tipos.js.map
