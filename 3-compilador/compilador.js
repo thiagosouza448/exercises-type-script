@@ -1,7 +1,7 @@
 "use strict";
 /*noEmitOnError at tsconfig.js*/
 /* option for not generate or alter ts to js when emit on error ts*/
-let chanel = 'Gaveta';
+let chanel = 'Gaveta1';
 let subscribers = 30018;
 // canal = inscritos
 console.log(`canal  = ${chanel}`);
