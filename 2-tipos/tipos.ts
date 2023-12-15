@@ -82,6 +82,7 @@ function multiplica(numeroUm: number, NumeroDois: number): number {
 
 }
 console.log(multiplica(7, 7))
+
 let calculo: (x: number, y: number) => number
 
 calculo = multiplica

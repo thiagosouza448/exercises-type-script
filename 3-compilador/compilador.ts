@@ -1,7 +1,7 @@
 
 /*noEmitOnError at tsconfig.js*/ 
 /* option for not generate or alter ts to js when emit on error ts*/
-let chanel: string = 'Gaveta'
+let chanel: string = 'Gaveta1'
 let subscribers: number = 30018
 
 // canal = inscritos
