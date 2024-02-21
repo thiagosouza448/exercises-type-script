@@ -14,6 +14,9 @@ console.log(motor)
 console.log(ano)
 
 // DESTRUCTURING OBJETO
+// Destructuring é uma técnica que permite extrair dados de objetos e arrays em variáveis individuais. 
+// Isso pode ser útil em muitas situações, especialmente quando você precisa trabalhar com dados complexos, 
+// como objetos aninhados ou matrizes multidimensionais
 const item = {
     nome: 'ssd 420',
     preco: 200,
@@ -40,4 +43,5 @@ console.log(w)
 console.log(s)
 console.log(l)
 console.log(itens)
+
 
